@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://7eh0yd22du1j"]
 
 [ext_resource type="Texture2D" uid="uid://bqjhyx2ayvpqo" path="res://assets/PlayerSub.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://bn5oknke6b73g" path="res://scenes/player.gd" id="1_g2els"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g2els"]
 animations = [{
@@ -19,6 +20,7 @@ height = 31.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1503117519]
 motion_mode = 1
+script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=829985918]
 sprite_frames = SubResource("SpriteFrames_g2els")
