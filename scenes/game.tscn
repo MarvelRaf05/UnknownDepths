@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cicxpesyxq3pw"]
+
+[ext_resource type="PackedScene" uid="uid://7eh0yd22du1j" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://bqjhyx2ayvpqo" path="res://assets/PlayerSub.png" id="1_yqjtg"]
+
+[node name="Game" type="Node2D" unique_id=1743683997]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2032817327]
+position = Vector2(392, 344)
+texture = ExtResource("1_yqjtg")
+
+[node name="Player" parent="." unique_id=1503117519 instance=ExtResource("1_uwrxv")]
+position = Vector2(315, 409)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=899396386]
+zoom = Vector2(2, 2)
