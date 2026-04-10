@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 @export var speed = 200
 @export var max_rotation_degrees := 45.0
+@export var health = 3
+@export var collisionDriftDuration = 1
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 var target = position
 
@@ -31,6 +33,23 @@ func _input(event):
 		sprite.rotation_degrees = angle_deg
 		velocity = position.direction_to(target) * speed
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if position.distance_to(target) > 10:
 		move_and_slide()
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		health -= 1;
+		#if(health <= 0):
+		#	free()
+		print(health)
+		velocity = velocity * -0.2
+		await get_tree().create_timer(collisionDriftDuration).timeout
+		velocity = velocity * 0
+
+
+
+func _on_body_entered(_body):
+	health -= 1;
+	if(health <= 0):
+		free()
+	print(health)
