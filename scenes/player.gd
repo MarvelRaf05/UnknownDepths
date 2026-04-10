@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 400
+@export var speed = 200
 @export var max_rotation_degrees := 45.0
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 var target = position
