@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c2sp33edvq6rm"]
 
-[ext_resource type="Texture2D" uid="uid://crlmexjlxq4ar" path="res://assets/SpermWhale-Sheet.png" id="1_hihnh"]
+[ext_resource type="Texture2D" uid="uid://crlmexjlxq4ar" path="res://assets/ART/SpermWhale-Sheet.png" id="1_hihnh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fy7dk"]
 atlas = ExtResource("1_hihnh")
