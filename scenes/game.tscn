@@ -481,6 +481,14 @@ region = Rect2(0, 0, 250, 175)
 [sub_resource type="AtlasTexture" id="AtlasTexture_kvuet"]
 atlas = ExtResource("5_iywne")
 region = Rect2(250, 0, 250, 175)
+[sub_resource type="Gradient" id="Gradient_lnu2h"]
+offsets = PackedFloat32Array(0.99759614, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lbhrr"]
+gradient = SubResource("Gradient_lnu2h")
+fill_to = Vector2(1, 1)
+
+[node name="Game" type="Node2D" unique_id=1743683997]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_trtic"]
 atlas = ExtResource("5_iywne")
@@ -633,3 +641,12 @@ position = Vector2(328, 389)
 scale = Vector2(0.44, 0.4542857)
 sprite_frames = SubResource("SpriteFrames_ssvqc")
 autoplay = "default"
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1693460993]
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=105296257]
+z_index = -3
+z_as_relative = false
+position = Vector2(137.49992, 928)
+scale = Vector2(43.23438, 47.71875)
+texture = SubResource("GradientTexture2D_lbhrr")

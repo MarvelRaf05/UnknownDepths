@@ -55,6 +55,24 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qhqgy"]
 
+[sub_resource type="Gradient" id="Gradient_g2els"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_qhqgy"]
+gradient = SubResource("Gradient_g2els")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[sub_resource type="Gradient" id="Gradient_qhqgy"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_dqkch"]
+gradient = SubResource("Gradient_qhqgy")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
 [node name="Player" type="CharacterBody2D" unique_id=1503117519]
 motion_mode = 1
 script = ExtResource("1_g2els")
@@ -70,3 +88,22 @@ flip_h = true
 position = Vector2(1, -3)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_qhqgy")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=2006096439]
+energy = 0.5
+texture = SubResource("GradientTexture2D_qhqgy")
+texture_scale = 6.0
+
+[node name="TimerSonarInterval" type="Timer" parent="." unique_id=1208844929]
+wait_time = 8.0
+
+[node name="TimerSonarDuration" type="Timer" parent="." unique_id=2051798465]
+wait_time = 3.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=1371777516]
+position = Vector2(-4.7683716e-07, -1.4999986)
+scale = Vector2(1.0625, 0.96875006)
+texture = SubResource("GradientTexture2D_dqkch")
+texture_scale = 2.0
+
+[connection signal="timeout" from="TimerSonarDuration" to="." method="_on_timer_sonar_duration_timeout"]
