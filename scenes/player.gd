@@ -51,6 +51,7 @@ func sonar():
 	if SonarIntervalTimer.time_left <= 0:
 		SonarDurationTimer.start(sonar_duration)
 		$PointLight2D.enabled = true    
+		$AudioPlayerSonar.play()
 		SonarIntervalTimer.start(sonar_duration + sonar_interval)
 	else:
 		print(SonarIntervalTimer.time_left)
@@ -72,10 +73,13 @@ func _physics_process(_delta):
 
 func _on_body_entered(_body):
 	health -= 1;
-	if(health <= 0):
-		free()
+	$AudioPlayerDamage.play()
 	print(health)
 
 func _on_timer_sonar_duration_timeout() -> void:
 	$PointLight2D.enabled = false
 	print("turn off light")
+
+
+func _on_timer_sonar_interval_timeout() -> void:
+	$AudioPlayerRecharge.play()
