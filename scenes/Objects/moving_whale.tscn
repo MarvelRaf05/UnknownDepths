@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://c2sp33edvq6rm"]
+
+[ext_resource type="Texture2D" uid="uid://crlmexjlxq4ar" path="res://assets/ART/SpermWhale-Sheet.png" id="1_hihnh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fy7dk"]
+atlas = ExtResource("1_hihnh")
+region = Rect2(0, 0, 250, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4k8ps"]
+atlas = ExtResource("1_hihnh")
+region = Rect2(250, 0, 250, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xi24"]
+atlas = ExtResource("1_hihnh")
+region = Rect2(500, 0, 250, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jo5jj"]
+atlas = ExtResource("1_hihnh")
+region = Rect2(750, 0, 250, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pb0i"]
+atlas = ExtResource("1_hihnh")
+region = Rect2(1000, 0, 250, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbqsg"]
+atlas = ExtResource("1_hihnh")
+region = Rect2(1250, 0, 250, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vsbsr"]
+atlas = ExtResource("1_hihnh")
+region = Rect2(1500, 0, 250, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnua7"]
+atlas = ExtResource("1_hihnh")
+region = Rect2(1750, 0, 250, 175)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_atc4n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fy7dk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4k8ps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xi24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jo5jj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7pb0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbqsg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vsbsr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnua7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hihnh"]
+radius = 20.0
+height = 196.0
+
+[sub_resource type="Animation" id="Animation_hihnh"]
+resource_name = "Moving_Loop"
+length = 15.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-100, 0), Vector2(-200, 0), Vector2(-300, 0), Vector2(-400, 0), Vector2(-500, 0), Vector2(-600, 0), Vector2(-700, 0), Vector2(-800, 0), Vector2(-900, 0), Vector2(-1000, 0), Vector2(-1100, 0), Vector2(-1200, 0), Vector2(-1300, 0), Vector2(-1400, 0), Vector2(-1500, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_fy7dk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4k8ps"]
+_data = {
+&"Moving_Loop": SubResource("Animation_hihnh"),
+&"RESET": SubResource("Animation_fy7dk")
+}
+
+[node name="MovingWhale" type="Node2D" unique_id=2004955767]
+
+[node name="Whale" type="AnimatableBody2D" parent="." unique_id=1970692323]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Whale" unique_id=695647372]
+sprite_frames = SubResource("SpriteFrames_atc4n")
+autoplay = "default"
+frame_progress = 0.15235531
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Whale" unique_id=1195150925]
+position = Vector2(-3, -8)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_hihnh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Whale" unique_id=1362849468]
+libraries/ = SubResource("AnimationLibrary_4k8ps")
+autoplay = &"Moving_Loop"
+speed_scale = 0.5
