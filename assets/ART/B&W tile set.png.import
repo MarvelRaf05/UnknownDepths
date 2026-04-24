@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crlmexjlxq4ar"
-path="res://.godot/imported/SpermWhale-Sheet.png-18d3f3c4bf813f5196f6b80c40456511.ctex"
+uid="uid://2xv156j6xfpd"
+path="res://.godot/imported/B&W tile set.png-0a9ae25f96f1e254ebd537855c65e764.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/SpermWhale-Sheet.png"
-dest_files=["res://.godot/imported/SpermWhale-Sheet.png-18d3f3c4bf813f5196f6b80c40456511.ctex"]
+source_file="res://assets/ART/B&W tile set.png"
+dest_files=["res://.godot/imported/B&W tile set.png-0a9ae25f96f1e254ebd537855c65e764.ctex"]
 
 [params]
 

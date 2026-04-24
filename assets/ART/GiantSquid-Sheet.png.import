@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6wk7acrbe8fv"
-path="res://.godot/imported/Submarine-Sheet_facing_Right.png-1ec9f1ed7ec7e95041531658b4f8e418.ctex"
+uid="uid://d3e8ue7f8c53f"
+path="res://.godot/imported/GiantSquid-Sheet.png-25ad73b6d97ecc50965c37e58ab86e74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Submarine-Sheet_facing_Right.png"
-dest_files=["res://.godot/imported/Submarine-Sheet_facing_Right.png-1ec9f1ed7ec7e95041531658b4f8e418.ctex"]
+source_file="res://assets/ART/GiantSquid-Sheet.png"
+dest_files=["res://.godot/imported/GiantSquid-Sheet.png-25ad73b6d97ecc50965c37e58ab86e74.ctex"]
 
 [params]
 

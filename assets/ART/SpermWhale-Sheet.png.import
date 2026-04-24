@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3e8ue7f8c53f"
-path="res://.godot/imported/GiantSquid-Sheet.png-148781b65ddddc1ad43cf864b8f0b15d.ctex"
+uid="uid://crlmexjlxq4ar"
+path="res://.godot/imported/SpermWhale-Sheet.png-b492b0243593b5f1bb3bbfd3b7326beb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GiantSquid-Sheet.png"
-dest_files=["res://.godot/imported/GiantSquid-Sheet.png-148781b65ddddc1ad43cf864b8f0b15d.ctex"]
+source_file="res://assets/ART/SpermWhale-Sheet.png"
+dest_files=["res://.godot/imported/SpermWhale-Sheet.png-b492b0243593b5f1bb3bbfd3b7326beb.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kbh8x785a8l6"
-path="res://.godot/imported/Submarine-Sheet.png-b2b92ce5393201a987a47803eb8258db.ctex"
+path="res://.godot/imported/Submarine-Sheet.png-a0f843550f6cd7fda551ace71c84f011.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Submarine-Sheet.png"
-dest_files=["res://.godot/imported/Submarine-Sheet.png-b2b92ce5393201a987a47803eb8258db.ctex"]
+source_file="res://assets/ART/Submarine-Sheet.png"
+dest_files=["res://.godot/imported/Submarine-Sheet.png-a0f843550f6cd7fda551ace71c84f011.ctex"]
 
 [params]
 

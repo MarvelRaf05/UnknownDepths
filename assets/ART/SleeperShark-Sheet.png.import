@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2xv156j6xfpd"
-path="res://.godot/imported/B&W tile set.png-e299ec159fc06078fca870d66827898e.ctex"
+uid="uid://bptssg6p2oksf"
+path="res://.godot/imported/SleeperShark-Sheet.png-5e06e18de1431ac2aba055593fe746c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/B&W tile set.png"
-dest_files=["res://.godot/imported/B&W tile set.png-e299ec159fc06078fca870d66827898e.ctex"]
+source_file="res://assets/ART/SleeperShark-Sheet.png"
+dest_files=["res://.godot/imported/SleeperShark-Sheet.png-5e06e18de1431ac2aba055593fe746c2.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bptssg6p2oksf"
-path="res://.godot/imported/SleeperShark-Sheet.png-ff63bf13d219412198c16df25591790c.ctex"
+uid="uid://b6wk7acrbe8fv"
+path="res://.godot/imported/Submarine-Sheet_facing_Right.png-924731ca22b1c093a86ccd9ce2ba076b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/SleeperShark-Sheet.png"
-dest_files=["res://.godot/imported/SleeperShark-Sheet.png-ff63bf13d219412198c16df25591790c.ctex"]
+source_file="res://assets/ART/Submarine-Sheet_facing_Right.png"
+dest_files=["res://.godot/imported/Submarine-Sheet_facing_Right.png-924731ca22b1c093a86ccd9ce2ba076b.ctex"]
 
 [params]
 
